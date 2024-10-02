@@ -38,7 +38,14 @@
         <br />
         <label for="pswd">Password :</label>
         <input type="password" id="password" name="pswd" />
-        <button id="btn-login" class="button-login" type="button">LOGIN</button>
+        <button
+          id="btn-login"
+          class="button-login"
+          type="button"
+          onclick="loginDoor()"
+        >
+          LOGIN
+        </button>
       </form>
     </div>
     <script>
@@ -50,7 +57,7 @@
         await new Promise((resolve) => setTimeout(resolve, 1000));
         window.location.href = "latihanButtonmain.html";
       }
-      document.getElementById("btn-login").onclick = loginDoor;
+      // document.getElementById("btn-login").onclick = loginDoor;
     </script>
   </body>
 </html>
