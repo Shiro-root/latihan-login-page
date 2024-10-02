@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan button</title>
+
+    <style>
+      body {
+        box-sizing: border-box;
+        background-image: url(backrgound.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+      }
+      form {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .button-login {
+        margin: 15px;
+        background-color: transparent;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="closeForm">
+        <label for="uName">Username :</label>
+        <input type="text" id="username" name="uName" /> <br />
+        <br />
+        <label for="pswd">Password :</label>
+        <input type="password" id="password" name="pswd" />
+        <button id="btn-login" class="button-login" type="button">LOGIN</button>
+      </form>
+    </div>
+    <script>
+      async function loginDoor() {
+        console.log("Berhasil di klick");
+
+        document.body.style.backgroundImage = "Url('1311993.jpeg')";
+        document.getElementById('closeForm').style.visibility = 'hidden';
+       
+       await new Promise(resolve => setTimeout(resolve, 1000));
+        window.location.href = "latihanButtonmain.html";
+     
+        
+      }
+      document.getElementById("btn-login").onclick = loginDoor;
+    </script>
+  </body>
+</html>
