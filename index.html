@@ -26,7 +26,14 @@
       .button-login {
         margin: 15px;
         background-color: transparent;
-        border: 1px solid black;
+        border: 2px solid black;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 3px;
+      }
+
+      .button-login:hover{
+        background-color: aliceblue;
       }
     </style>
   </head>
@@ -54,7 +61,7 @@
         document.body.style.backgroundImage = "Url('1311993.jpeg')";
         document.getElementById("closeForm").style.visibility = "hidden";
 
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        await new Promise((resolve) => setTimeout(resolve, 3000));
         window.location.href = "latihanButtonmain.html";
       }
       // document.getElementById("btn-login").onclick = loginDoor;
