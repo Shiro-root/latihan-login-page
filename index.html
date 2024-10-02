@@ -38,27 +38,19 @@
         <br />
         <label for="pswd">Password :</label>
         <input type="password" id="password" name="pswd" />
-        <button
-          id="btn-login"
-          class="button-login"
-          type="button"
-          onclick="btn-login"
-        >
-          LOGIN
-        </button>
+        <button id="btn-login" class="button-login" type="button">LOGIN</button>
       </form>
     </div>
     <script>
       async function loginDoor() {
         console.log("Berhasil di klick");
-
         document.body.style.backgroundImage = "Url('1311993.jpeg')";
         document.getElementById("closeForm").style.visibility = "hidden";
 
         await new Promise((resolve) => setTimeout(resolve, 1000));
-        window.location.href = "./latihanButtonmain.html";
+        window.location.href = "latihanButtonmain.html";
       }
-      //document.getElementById("btn-login").onclick = loginDoor;
+      document.getElementById("btn-login").onclick = loginDoor;
     </script>
   </body>
 </html>
